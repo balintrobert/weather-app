@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efe9f4;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ee6f57' fill-opacity='0.24' fill-rule='evenodd'/%3E%3C/svg%3E");
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #efe9f4;
+  box-shadow: 0 0px 0.7px rgba(0, 0, 0, 0.008), 0 0px 1.6px rgba(0, 0, 0, 0.012),
+    0 0px 2.8px rgba(0, 0, 0, 0.015), 0 0px 4.2px rgba(0, 0, 0, 0.018),
+    0 0px 6px rgba(0, 0, 0, 0.02), 0 0px 8.5px rgba(0, 0, 0, 0.022),
+    0 0px 12.1px rgba(0, 0, 0, 0.025), 0 0px 17.5px rgba(0, 0, 0, 0.028),
+    0 0px 27px rgba(0, 0, 0, 0.032), 0 0px 48px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.app-title {
+  cursor: default;
+}
+
+.app-title h1 {
+  margin-bottom: 40px;
+}
+
+.app-title i {
+  color: #ee6f57;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 1em;
+  border-bottom: 2px solid #ee6f57;
+  margin-right: 5px;
+}
+
+.search button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #ee6f57;
+  color: white;
+}
+
+.search button:hover {
+  background-color: #dd6a53;
+}
+
+.city-title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.city-coords {
+  text-align: center;
+  margin-top: 0;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-container {
+  cursor: default;
+}
+
+.result-container {
+  width: 100%;
+}
+
+.result-container .current {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result-container .current h3 {
+  display: inline;
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.hour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hour span {
+  vertical-align: super;
+  font-size: 0.7em;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day h3 {
+  background-color: #ee6f57;
+  color: #f6f5f5;
+  padding: 10px;
+  width: 100%;
+}
+
+img {
+  border-radius: 50%;
+  background-color: #2b2b2b25;
+}
+
+@media only screen and (min-width: 700px) {
+  /* For tablets: */
+  .container {
+    width: 80%;
+    padding: 40px;
+  }
+}
+
+@media only screen and (min-width: 868px) {
+  /* For desktop: */
+  .container {
+    width: 60%;
+    padding: 80px;
+  }
+}
